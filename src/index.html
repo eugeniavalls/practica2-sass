@@ -5,10 +5,47 @@
     <!-- PON UN FAVICON!!! -->
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- CAMBIA EL TITLE!!! -->
-    <title>Vite Template</title>
+    <title>Práctica 2 Sass</title>
   </head>
   <body>
+    <main class="main">
+      <div class="card">
+          
+          <img
+            class="card__image"
+            src="./assets/images/image-equilibrium.jpg"
+            alt="image-equilibrium"
+          />
+
+        <div class="card__info">
+          <h1 class="card__info--title"> Equilibrium #3429</h1>
+          <p class="card__info--text">Our Equilibrium collection promotes balance and calm.</p>
+         
+          <div class="card__icons">
+            <div class="card__icons--box">
+              <img class="card__icons--image" src="./assets/images/icon-ethereum.svg" alt="icon-eth">
+              <p class="card__icons--text text-eth">0.041 ETH</p>
+            </div>
+            <div class="card__icons--box">
+              <img class="card__icons--image" src="./assets/images/icon-clock.svg" alt="icon-days">
+              <p class="card__icons--text text-days">3 days left</p>
+            </div>
+          </div>
+          <hr class="card__line">
+          <div class="card__avatar">
+            <img class="card__avatar--image" src="./assets/images/image-avatar.png" alt="avatar">
+            <div class="card__avatar--text">
+              <span class="card__avatar--text-gray">Creation of</span>
+              <span class="card__avatar--text-name">Jules Wyvern</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
     <script type="module" src="./js/index.js"></script>
   </body>
 </html>

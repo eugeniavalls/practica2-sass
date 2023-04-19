@@ -1,0 +1,100 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: #15263F;
+    padding: 24px;
+
+    &__image{
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        margin-bottom: 24px;
+    }
+
+    &__info--title{
+        font-size: 22px;
+        margin: 0;
+        color: white;
+        font-weight: 600;
+    }
+
+    &__info--text{
+        color: #8BACD9;
+        font-size: 20px;
+        line-height: 28px;
+        font-weight: 300;
+    }
+
+    &__cart{
+        background-color: #3D8168;
+        border-radius: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    &__cart--text{
+        font-size: 14px;
+        font-weight: 700;
+        color: white;
+    }
+
+    &__icons{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        align-items: center;
+    }
+
+    &__icons--box{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__icons--text{
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    &__line{
+        border: 0.2px solid #2E405A;
+        margin-bottom: 16px;
+    }
+
+    &__avatar{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 1rem;
+    }
+
+    &__avatar--image{
+        width: 33px;
+        border: 0.5px solid white;
+        border-radius: 50px;
+    }
+
+    &__avatar--text{
+        font-size: 15px;
+    }
+
+    &__avatar--text-gray{
+        color: #8BACD9;
+    }
+
+    &__avatar--text-name{
+        color: white;
+    }
+
+}
+
+.text-eth{
+    color: #00FFF8;
+}
+
+.text-days{
+    color: #8BACD9;
+}
+
