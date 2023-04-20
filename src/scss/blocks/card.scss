@@ -1,100 +1,139 @@
-.card{
+@use "../mixins/responsive.scss" as *;
+@use "../mixins/pseudo.scss" as *;
+@use "../mixins/hover.scss" as *;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: var(--color-primary);
+  padding: 24px;
+
+  @include responsive(desktop) {
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__image-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 24px;
+
+    &::after {
+      @include pseudo(100%, 100%);
+      top: 0;
+      left: 0;
+      border-radius: var(--border-radius-small);
+      background-color: var(--color-secundary);
+      opacity: 0;
+      transition: opacity 0.4s;
+    }
+
+    @include hover {
+      &::after {
+        transform: translateY(0);
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__image {
+    border-radius: var(--border-radius-small);
+  }
+
+  &__info--title {
+    font-size: var(--font-size-l);
+    margin: 0;
+    color: var(--white);
+    font-weight: var(--font-weight-semibold);
+
+    @include responsive(desktop) {
+      @include hover {
+        color: var(--color-secundary);
+      }
+    }
+  }
+
+  &__info--text {
+    color: var(--color-text);
+    font-size: var(--font-size-m);
+    line-height: 28px;
+    font-weight: var(--font-weight-regular);
+  }
+
+  &__cart {
+    border-radius: var(--border-radius-small);
     display: flex;
-    flex-direction: column;
-    border-radius: 15px;
-    background-color: #15263F;
-    padding: 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
 
-    &__image{
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-        margin-bottom: 24px;
+  &__cart--text {
+    font-size: var(--font-size-xs);
+    font-weight: var(--font-weight-bold);
+    color: var(--white);
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+  }
+
+  &__icons--box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__icons--text {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-semibold);
+  }
+
+  &__line {
+    border: 0.2px solid var(--color-line);
+    margin-bottom: 16px;
+  }
+
+  &__avatar {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+  }
+
+  &__avatar--image {
+    width: 33px;
+    border: 0.5px solid var(--white);
+    border-radius: var(--border-radius-big);
+  }
+
+  &__avatar--text {
+    font-size: var(--font-size-s);
+  }
+
+  &__avatar--text-gray {
+    color: var(--color-text);
+  }
+
+  &__avatar--text-name {
+    color: var(--white);
+    @include responsive(desktop) {
+      @include hover {
+        color: var(--color-secundary);
+      }
     }
-
-    &__info--title{
-        font-size: 22px;
-        margin: 0;
-        color: white;
-        font-weight: 600;
-    }
-
-    &__info--text{
-        color: #8BACD9;
-        font-size: 20px;
-        line-height: 28px;
-        font-weight: 300;
-    }
-
-    &__cart{
-        background-color: #3D8168;
-        border-radius: 8px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-    }
-
-    &__cart--text{
-        font-size: 14px;
-        font-weight: 700;
-        color: white;
-    }
-
-    &__icons{
-        display: flex;
-        justify-content: space-between;
-        text-align: center;
-        align-items: center;
-    }
-
-    &__icons--box{
-        display: flex;
-        align-items: center;
-        gap: 8px;
-    }
-
-    &__icons--text{
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-    &__line{
-        border: 0.2px solid #2E405A;
-        margin-bottom: 16px;
-    }
-
-    &__avatar{
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 1rem;
-    }
-
-    &__avatar--image{
-        width: 33px;
-        border: 0.5px solid white;
-        border-radius: 50px;
-    }
-
-    &__avatar--text{
-        font-size: 15px;
-    }
-
-    &__avatar--text-gray{
-        color: #8BACD9;
-    }
-
-    &__avatar--text-name{
-        color: white;
-    }
-
+  }
 }
 
-.text-eth{
-    color: #00FFF8;
+.text-eth {
+  color: var(--color-secundary);
 }
 
-.text-days{
-    color: #8BACD9;
+.text-days {
+  color: var(--color-text);
 }
-
