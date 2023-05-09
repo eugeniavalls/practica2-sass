@@ -1,10 +1,10 @@
 # PRÁCTICA CON METODOLOGÍA BEM, LENGUAJE SASS Y ANIMACIONES
 
-![Imagen del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/IMAGEN-DEL-PROYECTO.jpg?raw=true)
+![Imagen del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica2-sass/main/src/assets/screenshots/01.png)
 
 ## Ejemplo en vivo
 
-- [Vista en vivo](URL-de-github-pages-de-este-proyecto)
+- [Vista en vivo](https://eugeniavalls.github.io/practica2-sass/)
 
 ## Descripción 📑
 
@@ -30,9 +30,8 @@ Realización de la práctica en responsive para ordenador y móvil realizando en
 
 Si quieres echar un vistazo al proyecto, te recomiendo:
 
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
-![Captura del proyecto](https://github.com/eduardofierropro/Portafolio-y-CV/blob/main/CAPTURA-DEL-PROYECTO.jpg?raw=true)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica2-sass/main/src/assets/screenshots/02.png)
+![Captura del proyecto](https://raw.githubusercontent.com/eugeniavalls/practica2-sass/main/src/assets/screenshots/03.png)
 
 ## Autor ✒️
 
