@@ -21,19 +21,23 @@
     margin-bottom: 24px;
 
     &::after {
-      @include pseudo(100%, 100%);
-      top: 0;
-      left: 0;
-      border-radius: var(--border-radius-small);
-      background-color: var(--color-secundary);
-      opacity: 0;
-      transition: opacity 0.4s;
+      @include responsive(desktop) {
+        @include pseudo(100%, 100%);
+        top: 0;
+        left: 0;
+        border-radius: var(--border-radius-small);
+        background-color: var(--color-secundary);
+        opacity: 0;
+        transition: opacity 0.4s;
+      }
     }
 
     @include hover {
       &::after {
-        transform: translateY(0);
-        opacity: 0.5;
+        @include responsive(desktop) {
+          transform: translateY(0);
+          opacity: 0.5;
+        }
       }
     }
   }

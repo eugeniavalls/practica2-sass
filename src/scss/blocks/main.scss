@@ -1,7 +1,13 @@
 /* ESTILOS DEL MAIN */
 
+@use "../mixins/responsive.scss" as *;
+
 .main {
   background-color: #0d192c;
-  padding: 152px;
+  padding: 62px 24px;
   font-family: "Outfit", sans-serif;
+
+  @include responsive(desktop) {
+    padding: 152px;
+  }
 }
